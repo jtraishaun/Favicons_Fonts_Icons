@@ -1,0 +1,76 @@
+nav{
+  width: 100%;
+  min-height: 50px;
+  background-color: red;
+  display:flex;
+  align-items: center;
+  justify-content: right;
+  border:0;
+
+  font-weight: bold;
+  font-size: 20px;
+
+  font-family:"LemonMilk";
+
+  a{
+    text-decoration: none;
+    margin-right: 10px;
+    color:white
+  }
+
+  #links{
+    display:none;
+
+    @media screen and (min-width: 600px) {
+      display: inline;
+    }
+  }
+
+  #menu-button{
+    height: 40px;
+    width: 40px;
+    display: block;
+    position:absolute;
+    right:0;
+
+    vertical-align: center;
+    text-align: center;
+
+    font-size: 35px;
+    font-weight: bold;
+
+    //making it look like an image button:
+    cursor:pointer;
+    //unadjustable text size
+    -webkit-text-size-adjust:none;
+    -ms-text-size-adjust:none;
+    -moz-text-size-adjust:none;
+    text-size-adjust:none;
+    //can't select like normal text
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    @media screen and (min-width: 600px) {
+      display: none;
+    }
+  }
+
+  #menu{
+    min-height: 100px;
+    width:120px;
+    padding-bottom: 10px;
+    background-color: red;
+    position:absolute;
+    right: 0px;
+    top:50px;
+    display:none;
+
+    a{
+      display:block;
+      margin-top: 10px;
+    }
+
+  }
+}
